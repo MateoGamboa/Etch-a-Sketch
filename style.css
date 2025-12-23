@@ -8,6 +8,11 @@
 .square{
     width: 25px;
     height: 25px;
+    box-sizing: border-box;
+}
+
+.borders-on .square{
+    border: 1px solid #ddd;
 }
 
 .square.active{
