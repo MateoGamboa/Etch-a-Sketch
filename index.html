@@ -3,16 +3,35 @@
   <head>
     <link rel="stylesheet" href="style.css"> 
     <meta charset='UTF-8'/>
-    <title>Some Web Page</title>
+    <title>Etch-a-Sketch</title>
   </head>
   <body>
-    <button id="resizeBtn">Grid Size</button>
-    <button id="clearBtn">Clear</button>
-    <button id="borderBtn">Toggle Grid</button>
-    <button id="randColourBtn">Random Colour</button>
+    <div class="frame">
+      <div class="frame-header">
+        <span class="line"></span>
+        <h1>Etch-a-Sketch</h1>
+        <span class="line"></span>
+      </div>
 
-    <div id="container"></div>
+      <div class="layout">
+        <div class="controls">
+          <button id="resizeBtn">Grid Size</button>
+          <button id="clearBtn">Clear</button>
+          <button id="borderBtn">Toggle Grid</button>
+          <button id="randColourBtn">Random Colour</button>
+        </div>
 
+        <div class="canvas">
+          <div id="container"></div>
+        </div>
+      </div>
+
+      <div class="frame-footer">
+        <span class="line"></span>
+        <span class="diamond"></span>
+        <span class="line"></span>
+      </div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
